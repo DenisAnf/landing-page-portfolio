@@ -38,6 +38,9 @@ p {
 
 .header {
 	padding-top: 33px;
+	height: 765px;
+	width: 100%;
+	background: url('../../resources/image/me.jpg') 50%/cover no-repeat;
 
 	&__inner {
 		display: flex;
@@ -67,12 +70,6 @@ p {
 	}
 
 	&__menu {}
-}
-
-.main-page {
-	height: 765px;
-	width: 100%;
-	background: url('../../resources/image/me.jpg') 50%/cover no-repeat;
 
 	&__description {
 		margin-top: 260px;
@@ -91,7 +88,6 @@ p {
 		letter-spacing: -0.031em; //pp
 	}
 }
-
 
 .menu {
 
@@ -123,7 +119,7 @@ p {
 	line-height: 29px;
 }
 
-.next-page {}
+.page {}
 
 .projects {
 	margin-top: 151px;
@@ -154,6 +150,10 @@ p {
 		}
 	}
 }
+
+//! добавить эффекты при наведенении в меню и на кнопку 
+
+
 
 .project {
 	position: relative;

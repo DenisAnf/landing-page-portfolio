@@ -115,6 +115,9 @@ p {
 
 .header {
   padding-top: 33px;
+  height: 765px;
+  width: 100%;
+  background: url("../../resources/image/me.jpg") 50%/cover no-repeat;
 }
 .header__inner {
   display: flex;
@@ -140,19 +143,14 @@ p {
   text-transform: uppercase;
   color: #1BFF07;
 }
-.main-page {
-  height: 765px;
-  width: 100%;
-  background: url("../../resources/image/me.jpg") 50%/cover no-repeat;
-}
-.main-page__description {
+.header__description {
   margin-top: 260px;
   margin-bottom: 27px;
   max-width: 430px;
   font-size: 20px;
   line-height: 26px;
 }
-.main-page__title {
+.header__title {
   margin-left: -5px;
   max-width: 919px;
   font-size: 80px;
