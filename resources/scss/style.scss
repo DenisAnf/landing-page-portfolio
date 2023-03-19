@@ -7,6 +7,15 @@ $color: #1BFF07;
 
 @import "_nullstyle";
 
+@function calcSize($f-min, $f-max, $w-min, $w-max) {
+	$k: ($f-max - $f-min)/($w-max - $w-min);
+	$b: $f-min - $k * $w-min;
+
+	$b: $b * 1px;
+
+	@return calc(#{$k} * 100vw + #{$b});
+}
+
 body {
 	width: 100%;
 }
@@ -40,6 +49,7 @@ p {
 }
 
 .header {
+	position: relative;
 	margin-bottom: 151px;
 	padding-top: 33px;
 	height: 765px;
@@ -76,15 +86,18 @@ p {
 	&__menu {}
 
 	&__description {
-		margin-top: 260px;
-		margin-bottom: 27px;
+		position: absolute;
+		left: max(15px, calc((100vw - 1165px)/2));
+		bottom: 326px;
 		max-width: 430px;
 		font-size: 20px;
 		line-height: 26px;
 	}
 
 	&__title {
-		margin-left: -5px; //pp
+		position: absolute;
+		left: max(15px, calc((100vw - 1177px)/2));
+		bottom: 89px;
 		max-width: 919px;
 		font-size: 80px;
 		line-height: 70px;

@@ -116,6 +116,7 @@ p {
 }
 
 .header {
+  position: relative;
   margin-bottom: 151px;
   padding-top: 33px;
   height: 765px;
@@ -147,14 +148,17 @@ p {
   color: #1BFF07;
 }
 .header__description {
-  margin-top: 260px;
-  margin-bottom: 27px;
+  position: absolute;
+  left: max(15px, (100vw - 1165px) / 2);
+  bottom: 326px;
   max-width: 430px;
   font-size: 20px;
   line-height: 26px;
 }
 .header__title {
-  margin-left: -5px;
+  position: absolute;
+  left: max(15px, (100vw - 1177px) / 2);
+  bottom: 89px;
   max-width: 919px;
   font-size: 80px;
   line-height: 70px;
