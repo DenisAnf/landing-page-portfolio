@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular);
 
-$fontfamily: "IBM Plex Mono", sans-serif;
+$fontfamily: "IBM Plex Mono", monospace;
+
+$color: #1BFF07;
 
 @import "_nullstyle";
 
@@ -37,10 +40,11 @@ p {
 }
 
 .header {
+	margin-bottom: 151px;
 	padding-top: 33px;
 	height: 765px;
 	width: 100%;
-	background: url('../../resources/image/me.jpg') 50%/cover no-repeat;
+	background: url('../resources/image/me.jpg') 50%/cover no-repeat;
 
 	&__inner {
 		display: flex;
@@ -58,14 +62,14 @@ p {
 		border-radius: 100px;
 		text-align: center;
 
-		a {
+		& a {
 			padding-right: 3px;
 			font-weight: 700;
 			font-size: 42.4px;
 			line-height: 37px;
 			letter-spacing: -0.11em;
 			text-transform: uppercase;
-			color: #1BFF07;
+			color: $color;
 		}
 	}
 
@@ -84,7 +88,7 @@ p {
 		max-width: 919px;
 		font-size: 80px;
 		line-height: 70px;
-		color: #1BFF07;
+		color: $color;
 		letter-spacing: -0.031em; //pp
 	}
 }
@@ -96,11 +100,71 @@ p {
 		align-items: center;
 		justify-content: flex-end;
 		gap: 10px 51px;
+		flex-wrap: wrap;
 	}
 
 	&__list-item {
 		font-size: 18px;
 		line-height: 23px;
+
+		&:hover {
+			color: $color;
+		}
+	}
+}
+
+.footer {}
+
+.contacts {
+	margin-bottom: 150px;
+	border-radius: 30px;
+	background:#191C19 url('../resources/image/contacts.svg') 100% 50%/contain no-repeat;
+
+	&__title {
+		padding-top: 327px;
+		padding-bottom: 36px;
+		font-size: 35px;
+		line-height: 60px;
+	}
+
+	&__list {
+		font-size: 60px;
+		line-height: 60px;
+
+		
+	}
+
+	&__list-item {
+		padding-bottom: 20px;
+
+		&:last-child {
+			padding-bottom: 88px;
+		}
+
+		&:hover {
+			color: $color;
+		}
+	}
+}
+
+.copyrights {
+	background: #FFFFFF;
+	border-radius: 30px 30px 0 0;
+	color: #000000;
+	font-family: Manrope;
+
+	&__title {
+		padding-top: 76px;
+		padding-bottom: 66px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	&__description {
+		padding-bottom: 24px;
+		font-size: 20px;
+		line-height: 27px;
+		opacity: 0.5;
 	}
 }
 
@@ -111,7 +175,7 @@ p {
 
 .title-b {
 	font-size: 35px;
-	line-height: 45px;
+	line-height: 46px;
 }
 
 .description {
@@ -122,8 +186,8 @@ p {
 .page {}
 
 .projects {
-	margin-top: 151px;
-	
+	margin-bottom: 151px;
+
 	&__title {
 		margin-bottom: 40px;
 		margin-left: -5px; //pp
@@ -139,21 +203,23 @@ p {
 		height: 153px;
 		width: 582px;
 		text-align: center;
-		background: #1BFF07;
+		background: $color;
+		border: 1px solid $color;
 		border-radius: 10px;
 		font-size: 30px;
-		line-height: 151px; //pp
+		line-height: 149px; //pp
 		color: #000000;
 		
 		&:visited {
 			color: #000000;
 		}
+
+		&:hover {
+			background: #000000;
+			color: $color;
+		}
 	}
 }
-
-//! добавить эффекты при наведенении в меню и на кнопку 
-
-
 
 .project {
 	position: relative;
@@ -185,54 +251,114 @@ p {
 }
 
 .competencies {
-	margin-top: 150px;
+	margin-bottom: 151px;
 
-	&__title {}
+	&__title {
+		margin-bottom: 104px;
+		margin-left: -2px; //pp
+	}
 
 	&__list {}
 }
 
 .competence {
+	position: relative;
+	padding-top: 121px;
 
-	&__title {}
+	&:last-child {
+		& h3 {
+			max-width: 651px; //pp
+		}
+	}
 
-	&__description {}
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 61px;
+		width: 45px;
+		height: 44px;
+		border-radius: 10px;
+		}
+
+	&:first-child {
+		padding-top: 0;
+
+		&:before {
+			top: -56px;
+			background: $color url('../resources/image/icons/html-css.svg') center/ auto no-repeat;
+		}
+	}
+
+	&:nth-child(2):before {
+		background: $color url('../resources/image/icons/js.svg') center/ auto no-repeat;
+	}
+
+	&:nth-child(3):before {
+		background: $color url('../resources/image/icons/library.svg') center/ auto no-repeat;
+	}
+
+	&:nth-child(4):before {
+		background: $color url('../resources/image/icons/adaptive.svg') center/ auto no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 14px;
+		margin-left: -1px; //pp
+		color: $color;
+	}
+
+	&__description {
+		margin-left: -1px; //pp
+		max-width: 778px;
+	}
 }
 
 .services {
-
-	&__title {}
+	margin-bottom: 150px;
+	
+	&__title {
+		margin-bottom: 74px;
+		max-width: 406px;
+	}
 
 	&__list {}
 }
 
 .service {
+	margin-bottom: 74px;
 
-	&__image {}
+	&:last-child {
+		margin-bottom: 0px;
 
-	&__title {}
+		& p {
+			max-width: 724px; //pp
+		}
+	}
 
-	&__description {}
+	&:nth-child(2){ 
+		margin-bottom: 137px; //pp
+	} 
+
+	&__image {
+		border-radius: 30px;
+	}
+
+	&__card {
+		min-height: 283px;
+		padding: 40px;
+		background: #191C19;
+		border-radius: 30px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		color: $color;
+	}
+
+	&__description {
+		max-width: 749px;
+	}
 }
 
-.footer {}
-
-.contacts {
-
-	&__title {}
-
-	&__list {}
-
-	&__list-instagram {}
-
-	&__list-telegram {}
-
-	&__list-mail {}
-}
-
-.copyrights {
-
-	&__title {}
-
-	&__description {}
-}

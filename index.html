@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 	<meta name="description" content="фронтенд разработчик и дизайнер сайтов">
 	<meta name="keywords" content="фронтенд, сайт, дизайн, разработка, лендинг, многостраничный, веб, приложение">
 
@@ -27,6 +27,7 @@
 	<meta name="Address" content="Санкт-Петербург">
 
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="shortcut icon" href="resources/image/icons/favicon.ico"/>
 </head>
 
 <body>
@@ -57,19 +58,19 @@
 					<ul class="projects__list">
 						<li class="project">
 							<img class="project__image" src="resources/image/projects/project-1.jpg" alt="одностраничный сайт дизайн-студии Метрика" srcset="resources/image/projects/project-1.jpg, resources/image/projects/project-1@2x.jpg 2x">
-							<h3 class="project__title title-b">Realhome</h3>
-							<p class="project__description">дизайн,верстка, настройка</p>
+							<h3 class="project__title title-b"><a href="">Realhome<a></h3>
+							<p class="project__description">дизайн, верстка, настройка</p>
 						</li>
 						<li class="project">
 							<img class="project__image" src="resources/image/projects/project-2.jpg" alt="многостраничный сайт производителя очков"
 								srcset="resources/image/projects/project-2.jpg, resources/image/projects/project-2@2x.jpg 2x">
-							<h3 class="project__title title-b">GLASS</h3>
+							<h3 class="project__title title-b"><a href="">GLASS<a></a></h3>
 							<p class="project__description">разработка интерфейса</p>
 						</li>
 						<li class="project">
 							<img class="project__image" src="resources/image/projects/project-3.jpg" alt="сайт с многопользовательским интерфейсом"
 								srcset="resources/image/projects/project-3.jpg, resources/image/projects/project-3@2x.jpg 2x">
-							<h3 class="project__title title-b">Fesiyen</h3>
+							<h3 class="project__title title-b"><a href="">Fesiyen<a></a></h3>
 							<p class="project__description">разработка интерфейса</p>
 						</li>
 					</ul>
@@ -103,22 +104,28 @@
 							<img class="service__image" src="resources/image/services/service-1.jpg"
 								alt="одностраничный сайт дизайн-студии Метрика"
 								srcset="resources/image/services/service-1.jpg, resources/image/services/service-1@2x.jpg 2x">
-							<h3 class="service__title title-a">Разработка сайта под ключ</h3>
-							<p class="service__description description">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+							<div class="service__card">
+								<h3 class="service__title title-a">Разработка сайта под ключ</h3>
+								<p class="service__description description">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+							</div >
 						</li>
 						<li class="service">
 							<img class="service__image" src="resources/image/services/service-2.jpg"
 								alt="одностраничный сайт дизайн-студии Метрика"
 								srcset="resources/image/services/service-2.jpg, resources/image/services/service-2@2x.jpg 2x">
-							<h3 class="service__title title-a">Верстка сайтов</h3>
-							<p class="service__description description">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
+							<div class="service__card">
+								<h3 class="service__title title-a">Верстка сайтов</h3>
+								<p class="service__description description">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
+							</div>
 						</li>
 						<li class="service">
 							<img class="service__image" src="resources/image/services/service-3.jpg"
 								alt="одностраничный сайт дизайн-студии Метрика"
 								srcset="resources/image/services/service-3.jpg, resources/image/services/service-3@2x.jpg 2x">
-							<h3 class="service__title title-a">Разработка мобильного интерфейса</h3>
-							<p class="service__description description">Это процесс создания интерактивных элементов на странице с помощью JavaScript.Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
+							<div class="service__card">
+								<h3 class="service__title title-a">Разработка мобильного интерфейса</h3>
+								<p class="service__description description">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
+							</div>
 						</li>
 					</ul>
 				</section>
@@ -129,9 +136,9 @@
 				<div class="container">
 					<h2 class="contacts__title title-b">для связи:</h2>
 					<ul class="contacts__list">
-						<li class="contacts__list-instagram"><a href="https://www.instagram.com" target="_blank">instagram</a></li>
-						<li class="contacts__list-telegram"><a href="https://telegram.org" target="_blank">telegram</a></li>
-						<li class="contacts__list-mail"><a href="mailto:mail.google.com" target="_blank">mail</a></li>
+						<li class="contacts__list-item"><a href="https://www.instagram.com" target="_blank">instagram</a></li>
+						<li class="contacts__list-item"><a href="https://t.me/Denis_Bear_A" target="_blank">telegram</a></li>
+						<li class="contacts__list-item"><a href="mailto:mail.google.com" target="_blank">mail</a></li>
 					</ul>
 				</div>
 			</section>
